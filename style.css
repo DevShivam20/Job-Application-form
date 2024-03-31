@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c4d6fe;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.heading {
+    background-color: white;
+    font-size: larger;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+}
+
+.web {
+    font-size: 25px;
+}
+
+.form-container {
+    margin-top: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+}
+
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid rgb(160, 159, 159);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.text-control {
+    grid-column: 1 / span 2;
+}
+
+.text-control textarea {
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline-color: rgb(187, 23, 219);
+}
+
+.btn {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+button {
+    color: rgb(157, 245, 245);
+    background-color: blueviolet;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+}
+
+button:hover {
+    color: rgb(63, 6, 116);
+    background-color: rgb(189, 149, 248);
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+@media (max-width: 460px) {
+    .text-control {
+        grid-column: 1 / span 1;
+    }
+}
+
+;
